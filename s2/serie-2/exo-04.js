@@ -13,3 +13,8 @@ while(i<=10)
     console.log(`${nombre}x${i}=${i*nombre}`);
     i++;
 }
+
+if ((i<0)&&(i==5)||(i!=1))
+{
+
+}
