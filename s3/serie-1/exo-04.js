@@ -24,7 +24,7 @@ do {
         alert(`${propositionNombre} est trop petit`);
     }
 }
-while ((propositionNombre != random)&&(nombreEssais<=constNombreEssaisMax));
+while ((propositionNombre != random)&&(nombreEssais<constNombreEssaisMax));
 
 //tant que different du nombre tiré au hasard
 if (propositionNombre===random)
