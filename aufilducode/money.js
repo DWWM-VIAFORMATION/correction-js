@@ -56,3 +56,30 @@ if (death.getMonth() < birth.getMonth()) { // retire un an si le dernier anniver
   lifetime -= 1
 }
 console.log('Pierre Bourdieu est mort à ' + lifetime + ' ans')
+
+
+let dAujourdhui = new Date();
+let cinqFev = new Date("February 5, 2001 18:15:00");
+let noel97 = new Date(97, 11, 25);
+let noel98 = new Date(98, 11, 25, 1, 30, 0);
+console.log(cinqFev);
+console.log(noel97);
+console.log(noel98);
+
+const date = new Date();
+const offset = date.getTimezoneOffset();
+console.log(offset);  
+const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+console.log(timezone); 
+
+const dateEvent = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+console.log(dateEvent.toLocaleDateString('de-DE', options));
+// expected output (varies according to local timezone): Donnerstag, 20. Dezember 2012
+
+console.log(dateEvent.toLocaleDateString('ar-EG', options));
+// expected output (varies according to local timezone): الخميس، ٢٠ ديسمبر، ٢٠١٢
+
+console.log(dateEvent.toLocaleDateString(undefined, options));
+// expected output (varies according to local timezone and default locale): Thursday, December 20, 2012
