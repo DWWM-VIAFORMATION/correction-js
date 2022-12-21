@@ -19,3 +19,5 @@ boutonEgal.addEventListener('click',evaluerExpression);
 boutonClear.addEventListener('click',effacerExpression);
 boutonClearLast.addEventListener('click',effacerLastExpression);
 
+let body = document.querySelector('body');
+body.addEventListener('keydown',touchePressee);
