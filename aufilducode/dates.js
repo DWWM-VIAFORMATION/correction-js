@@ -31,10 +31,10 @@ alert(date2011); // 1.01.2011, 02:03:04.567
 
 // GETTERS
 // date actuel
-let date = new Date();
+let dateG = new Date();
 
 // l'heure dans votre fuseau horaire actuel
-alert(date.getHours());
+alert(dateG.getHours());
 
 // l'heure dans le fuseau horaire UTC + 0 (heure de Londres sans heure avancée)
 alert(date.getUTCHours());
@@ -105,3 +105,11 @@ alert( getDateAgo(date, 2) ); // 31, (31 Dec 2014)
 alert( getDateAgo(date, 365) ); // 2, (2 Jan 2014)
 alert(date);// tojours le 2 janvier 2015 !
 
+const newDiv = document.createElement("div");
+// and give it some content
+const newContent = document.createTextNode("Hi there and greetings!");
+// add the text node to the newly created div
+newDiv.appendChild(newContent);
+// add the newly created element and its content into the DOM
+const currentDiv = document.getElementById("div1");
+document.body.insertBefore(newDiv, currentDiv);
