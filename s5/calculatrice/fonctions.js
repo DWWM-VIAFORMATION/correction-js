@@ -28,13 +28,13 @@ function effacerExpression(event) {
 }
 function effacerLastExpression(event) {
     let tampon = document.querySelector('#tampon');
-    tampon.value = tampon.value.substring(0, tampon.value.length - 1);;
+    tampon.value = tampon.value.substring(0, tampon.value.length - 1);
 }
 function touchePressee(event) {
     console.log(event);
     if ((event.key >= 0) && (event.key <= 9))
         ajouterUnChiffreAuTampon(event.key)
-        else
+    else
     switch (event.key) {
         case '+': ajouterUneOperationAuTampon('+')
             break;
@@ -42,12 +42,11 @@ function touchePressee(event) {
             break;
         case '/': ajouterUneOperationAuTampon('/')
             break;
-        case '+': ajouterUneOperationAuTampon('*')
+        case '*': ajouterUneOperationAuTampon('*')
             break;
         case '=':evaluerExpression();
         default:
             console.log(event.key);
             break;
     }
-
 }
