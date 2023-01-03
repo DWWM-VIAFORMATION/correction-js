@@ -9,6 +9,7 @@ function mettreCalculAJour(event)
     console.log(date);
     txtAgeAn.value =convertirMilliSecEnAnnee(Date.now()-date.getTime())+" années";
     txtAgeAnMois.value =convertirMilliSecEnAnneeMois(Date.now()-date.getTime());
+    document.title = convertirMilliSecEnAnneeMois(Date.now()-date.getTime());
 }
 
 let boutonCalculer = document.querySelector('#btnCalculer');

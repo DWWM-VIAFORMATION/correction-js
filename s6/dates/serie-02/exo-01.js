@@ -64,4 +64,9 @@ function retournerMoisRevolutionnaire(pDateDuJour) {
 let dateDuJour = new Date();
 // dateDuJour = Date.now();
 console.log(retournerMoisRevolutionnaire(dateDuJour));
+console.log(document.body);
+console.log(document.head);
+console.log(document.links);
+console.log(document.scripts);
+console.log(document.url);
 
