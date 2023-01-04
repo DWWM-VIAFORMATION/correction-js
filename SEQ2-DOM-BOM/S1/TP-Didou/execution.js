@@ -1,9 +1,14 @@
-var bodyTag = document.body;
-var p1Tag   = bodyTag.childNodes[3];
-var bTag    = p1Tag.lastChild;
-var p2Tag   = bodyTag.childNodes[5];
-var imgTag  = p2Tag.firstChild;
+// je crée une variable boutons et j'y affecte la liste des élements
+// html qui ont pour class "btnAnimal"
+let boutons = document.querySelectorAll('.btnAnimal')
 
-console.log("p1Tag  : "+ p1Tag.innerHTML);
-console.log("bTag   : "+ bTag.innerHTML);
-console.log("imgTag : "+ imgTag.src);
+//boutons est une liste, donc je la parcours avec un foreach
+boutons.forEach(bouton => {
+    // pour chaque bouton, on abonne à l'événement click
+    bouton.addEventListener('click',changerImageAnimal)
+});
+
+let images = document.querySelectorAll('.imgAnimal');
+images.forEach(image => {
+    image.addEventListener('mouseover',changerImageCaroussel);
+});
