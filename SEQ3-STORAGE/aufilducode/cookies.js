@@ -1,0 +1,13 @@
+console.log('les cookies');
+console.log('['+document.cookie+']');
+document.cookie = "delicieux_cookie=choco";
+document.cookie = "savoureux_cookie=menthe";
+//document.cookie = "firstName=Christopher ; max-age=" + 30 ;
+document.cookie = "prenom=Christophe ; expires=Thu, 31 Dec 2099 23:59:59 GMT " ;
+document.cookie = "savoureux_cookie_test=menthe;path=/aufilducode/test;secure";
+document.cookie = "savoureux_cookie_securized=menthe;secure";
+let cookiesetinfos = document.cookie.split(';');
+let cookies = cookiesetinfos[0].split('=');
+console.log(cookies);
+console.log(cookies[1]);
+console.log(document.cookie);
