@@ -1,9 +1,9 @@
-console.log(localStorage.getItem("prenom"));
-if ((localStorage.getItem("prenom") == "") || (localStorage.getItem("prenom") == null)) {
+console.log(sessionStorage.getItem("prenom"));
+if ((sessionStorage.getItem("prenom") == "") || (sessionStorage.getItem("prenom") == null)) {
     let prenom = prompt("quel est votre prénom?")
-    localStorage.setItem("prenom", prenom);
+    sessionStorage.setItem("prenom", prenom);
 }
 else {
-    alert(localStorage.getItem("prenom"))
-    localStorage.clear();
+    alert(sessionStorage .getItem("prenom"))
+    sessionStorage.clear();
 }
