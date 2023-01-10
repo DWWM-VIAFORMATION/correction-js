@@ -1,6 +1,7 @@
 class PortFolio
 {
     listePicture;
+    perPicture=1;
     constructor()
     {
         this.listePicture= new Array();
@@ -9,4 +10,5 @@ class PortFolio
     {
         this.listePicture.push(pPicture);
     }
+ 
 }
